@@ -1,0 +1,102 @@
+@use "sass:map";
+
+@import "../../../../styles/variables.scss";
+
+.introSectionContainer {
+  padding: 0 map.get($sizes, minimal-padding);
+  margin-top: 90px;
+
+  .introSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: map.get($sizes, main-web-width);
+    margin: 0 auto;
+
+    &__header {
+      font-size: 7.2rem;
+      font-weight: 800;
+      color: map.get($colors, text-color);
+      text-align: center;
+    }
+
+    &__ipadImg {
+      display: none;
+    }
+
+    &__mobileImg {
+      display: none;
+    }
+
+    &__webImg {
+      margin-top: 20px;
+      height: 340px;
+      width: 1200px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .introWishlistFormContainer {
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .validationMessageSuccess {
+      top: calc(100% + 15px);
+      left: initial !important;
+    }
+
+    .validationMessageError {
+      top: calc(100% + 15px);
+      left: initial !important;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .introSectionContainer {
+    padding: 0;
+    margin-top: 45px;
+
+    .introSection {
+      &__header {
+        padding: 0 map.get($sizes, minimal-padding);
+        font-size: 5rem;
+      }
+
+      &__ipadImg {
+        display: initial;
+        width: 100%;
+        margin: 15px 0;
+      }
+
+      &__webImg {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .introSectionContainer {
+    order: 1;
+    margin-top: 20px;
+
+    .introSection {
+      &__header {
+        font-size: 2.5rem;
+        line-height: 27px;
+      }
+
+      &__ipadImg {
+        display: none;
+      }
+
+      &__mobileImg {
+        display: initial;
+        width: 100%;
+        margin: 30px 0 38px;
+      }
+    }
+  }
+}
