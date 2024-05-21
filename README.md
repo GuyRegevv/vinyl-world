@@ -1,8 +1,15 @@
-# React + Vite
+# Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Vinyl World
 
-Currently, two official plugins are available:
+Landing page for Vinyl World. This repository contains frontend code, using React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+Landing page requires [Node.js](https://nodejs.org/) v18+ to run.
+
+Install the dependencies and devDependencies and start the server.
+
+sh
+npm install
+npm run dev

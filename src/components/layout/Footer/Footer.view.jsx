@@ -19,12 +19,7 @@ const FooterView = () => {
 						*By subscribing to our newsletter you agree to our
 					</span>
 					<span className={classes['rightFooterTextContainer__text']}>&nbsp;</span>
-					<a
-						href="http://pages.flycricket.io/vinyl-world-br/privacy.html"
-						target="_blank"
-						className={classes['rightFooterTextContainer__text']}
-						rel="noreferrer"
-					>
+					<a href="" target="_blank" className={classes['rightFooterTextContainer__text']} rel="noreferrer">
 						Privacy Policy
 					</a>
 				</div>
